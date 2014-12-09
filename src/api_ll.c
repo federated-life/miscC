@@ -17,17 +17,23 @@ int thingy(void) {
 
 	root->x = 5;
 
-	printf( "thing" );
+	printf( "thing \n" );
 
 	return 0;
 
 }
 
-int write_out(char string[50] ) {
+void write_to_file(char string[], char outfile[]) {
+	/* do stuff */
+	printf( "a: %c , b: %c \n", string[0],	outfile[0]);
+}
+
+int write_out(char string[] ) {
 
 	int x;
 	for ( x=0; x<10; x++ ) {
-		printf( "val: %s" , string[x] );
+		printf( "checking val: %d \n", x );
+		printf( "val: %c \n" , string[x] );
 	}
 
 	return 0;
